@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhidao.sgr.zhidao3d.MainActivity">
+
+
+    <com.zhidao.sgr.zhidao3d.image_handle.StickerLayout
+
+
+        android:id="@+id/sticker_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical|left"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:textSize="45px"
+            android:text="选择空间"
+            android:id="@+id/text_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+
+        <TextView
+            android:textSize="45px"
+            android:text="窗帘"
+            android:id="@+id/text_cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="45px"
+            android:text="墙纸"
+            android:id="@+id/text_wall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical|right"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+
+        <TextView
+            android:textSize="45px"
+            android:text="选区"
+            android:id="@+id/text_select_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+
+        <TextView
+            android:textSize="45px"
+            android:text="调整"
+            android:id="@+id/text_adjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="45px"
+            android:text="缩放"
+            android:id="@+id/text_sf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:textSize="45px"
+            android:text="新建"
+            android:id="@+id/text_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_above="@+id/sticker_layout"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+    <TextView
+        android:gravity="center"
+        android:text="素材库"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_sc"
+        android:layout_width="fill_parent"
+       />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:gravity="center"
+        android:id="@+id/img_list"
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+    />
+
+</LinearLayout>
+    <!--   <ImageView
+           android:layout_alignParentBottom="true"
+           android:id="@+id/imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           app:srcCompat="@mipmap/cat" />
+
+
+
+   -->
+
+
+</FrameLayout>
